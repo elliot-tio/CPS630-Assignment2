@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Art Gallery</title>
+  <link rel="stylesheet" href="Assignment2-team20.css">
+
+
+</head>
+
+<body>
+
+  <h1>Art Gallery Home</h1>
+  <div class="topnav">
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Blog</a>
+    <a href="#"><img src=https://image.flaticon.com/icons/png/512/34/34627.png width="14" height="20"></a>
+  </div><br></br>
+
+  <div class="options-bar">
+    <ul class="nav-bar">
+      <label for="artworks">Artworks:</label>
+      <li><select id="artworks" onchange="populateWindow(this)">
+        <option value="pick">Pick an Artwork</option>
+        <option value="Mona Lisa">Mona Lisa</option>
+        <option value="De Matteis Triumph of the Immaculate Anagoria">De Matteis Triumph of the Immaculate Anagoria</option>
+        <option value="The Delivery of the Keys to Saint Peter">The Delivery of the Keys to Saint Peter</option>
+        <option value="The Starry Night">The Starry Night</option>
+        <option value="The Creation of Adam">The Creation of Adam</option>
+      </select></li>
+      <label for="artists">Artists:</label>
+      <li><select id="artists" onchange="populateWindow(this)">
+        <option value="pick">Pick an Artist</option>
+        <option value="Leonardo da Vinci">Leonardo da Vinci</option>
+        <option value="Vincent van Gogh">Vincent van Gogh</option>
+        <option value="Michelangelo">Michelangelo</option>
+        <option value="Claude Monet">Claude Monet</option>
+        <option value="Pablo Picasso">Pablo Picasso</option>
+      </select></li>
+      <label for="museums">Museums:</label>
+      <li><select id="museums" onchange="populateWindow(this)">
+      <option value="pick">Pick an Museum</option>
+      <option value="Stoa of Attalos">Stoa of Attalos</option>
+      <option value="Louvre">Louvre</option>
+      <option value="Royal Ontario Museum">Royal Ontario Museum</option>
+      <option value="Miyanomori Art Museum">Miyanomori Art Museum</option>
+      <option value="Benaki Museum">Benaki Museum</option>
+      </select></li>
+    </ul>
+  </div>
+  <div class="">
+
+
+  </div>
+  <div class="window-container">
+    <div class="right-window" id="right-window">Pick an Artwork or Artist from the lists above.</div>
+    <div class="middle-window" id="middle-window">Pick an Artwork or Artist from the lists above.</div>
+  </div>
+
+  <div class="container">
+    <div class="group-info">
+      <pre>CPS 630 Assignment 2 (Iteration 1)<br>Team #20 <br>Due date: March 11, 2018</pre>
+    </div>
+    <div class="group-table">
+      <pre>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Student Number</th>
+          </tr>
+          <tr>
+            <td>Alex Zhou</td>
+            <td>500714525</td>
+          </tr>
+          <tr>
+            <td>Elliot Tio</td>
+            <td>500740959</td>
+          </tr>
+          <tr>
+            <td>Marcus Choi</td>
+            <td>500628295</td>
+          </tr>
+        </table>
+      </pre>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="Assignment2-team20.js" charset="utf-8"></script>
+</body>
+
+</html>

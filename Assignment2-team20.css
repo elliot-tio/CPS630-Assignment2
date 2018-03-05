@@ -1,0 +1,91 @@
+body, html {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  height: 100%;
+  width: 100% margin: 0;
+  padding: 0;
+}
+
+html {
+  background-image: url("images/binary.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: auto;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-bar {
+  list-style-type: none;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+.group-info {
+  float: left;
+  width: auto;
+  padding: 8px;
+}
+
+.window-container {
+  height: 50%;
+  margin-top: 30px;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#right-window {
+  float: right;
+  width: 33%;
+  height: 100%;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+#middle-window {
+  float: right;
+  width: 30%;
+  height: 100%;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+li {
+  display: inline;
+  padding: 8px;
+}
+
+table, td, th {
+  text-align: left;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #666;
+  color: black;
+}
