@@ -15,55 +15,51 @@
 
   <h1>Art Gallery Home</h1>
   <div class="topnav">
-    <a href="#">Home</a>
-    <a href="#">About Us</a>
-    <a href="#">Blog</a>
-    <a href="#"><img src=https://image.flaticon.com/icons/png/512/34/34627.png width="14" height="20"></a>
+    <a href="">Home</a>
+    <a href="">About Us</a>
+    <a href="">Blog</a>
+    <a href=""><img src=https://image.flaticon.com/icons/png/512/34/34627.png width="14" height="20"></a>
   </div><br></br>
 
-  <div class="options-bar">
-    <ul class="nav-bar">
-      <label for="artworks">Artworks:</label>
-      <li><select id="artworks" onchange="populateWindow(this)">
-        <option value="pick">Pick an Artwork</option>
-        <option value="Mona Lisa">Mona Lisa</option>
-        <option value="De Matteis Triumph of the Immaculate Anagoria">De Matteis Triumph of the Immaculate Anagoria</option>
-        <option value="The Delivery of the Keys to Saint Peter">The Delivery of the Keys to Saint Peter</option>
-        <option value="The Starry Night">The Starry Night</option>
-        <option value="The Creation of Adam">The Creation of Adam</option>
-      </select></li>
-      <label for="artists">Artists:</label>
-      <li><select id="artists" onchange="populateWindow(this)">
-        <option value="pick">Pick an Artist</option>
-        <option value="Leonardo da Vinci">Leonardo da Vinci</option>
-        <option value="Vincent van Gogh">Vincent van Gogh</option>
-        <option value="Michelangelo">Michelangelo</option>
-        <option value="Claude Monet">Claude Monet</option>
-        <option value="Pablo Picasso">Pablo Picasso</option>
-      </select></li>
-      <label for="museums">Museums:</label>
-      <li><select id="museums" onchange="populateWindow(this)">
-      <option value="pick">Pick an Museum</option>
-      <option value="Stoa of Attalos">Stoa of Attalos</option>
-      <option value="Louvre">Louvre</option>
-      <option value="Royal Ontario Museum">Royal Ontario Museum</option>
-      <option value="Miyanomori Art Museum">Miyanomori Art Museum</option>
-      <option value="Benaki Museum">Benaki Museum</option>
-      </select></li>
-    </ul>
-  </div>
-  <div class="">
-
-
-  </div>
   <div class="window-container">
-    <div class="right-window" id="right-window">Pick an Artwork or Artist from the lists above.</div>
-    <div class="middle-window" id="middle-window">Pick an Artwork or Artist from the lists above.</div>
+    <div class="left-window" id="left-window">
+      <ul class="nav-bar">
+          <label for="artworks">Artworks:</label>
+          <li><select id="artworks" onchange="populateWindow(this)">
+            <option value="pick">Pick an Artwork</option>
+            <option value="Mona Lisa">Mona Lisa</option>
+            <option value="De Matteis Triumph of the Immaculate Anagoria">De Matteis Triumph of the Immaculate Anagoria</option>
+            <option value="The Delivery of the Keys to Saint Peter">The Delivery of the Keys to Saint Peter</option>
+            <option value="The Starry Night">The Starry Night</option>
+            <option value="The Creation of Adam">The Creation of Adam</option>
+          </select></li>
+          <label for="artists">Artists:</label>
+          <li><select id="artists" onchange="populateWindow(this)">
+            <option value="pick">Pick an Artist</option>
+            <option value="Leonardo da Vinci" id="1">Leonardo da Vinci</option>
+            <option value="Vincent van Gogh">Vincent van Gogh</option>
+            <option value="Michelangelo">Michelangelo</option>
+            <option value="Claude Monet">Claude Monet</option>
+            <option value="Pablo Picasso">Pablo Picasso</option>
+          </select></li>
+          <label for="museums">Museums:</label>
+          <li><select id="museums" onchange="populateWindow(this)">
+          <option value="pick">Pick an Museum</option>
+          <option value="Stoa of Attalos">Stoa of Attalos</option>
+          <option value="Louvre">Louvre</option>
+          <option value="Royal Ontario Museum">Royal Ontario Museum</option>
+          <option value="Miyanomori Art Museum">Miyanomori Art Museum</option>
+          <option value="Benaki Museum">Benaki Museum</option>
+          </select></li>
+        </ul>
+      </div>
+    <div class="middle-window" id="middle-window"></div>
+    <div class="right-window" id="right-window"></div>
   </div>
 
   <div class="container">
     <div class="group-info">
-      <pre>CPS 630 Assignment 2 (Iteration 1)<br>Team #20 <br>Due date: March 11, 2018</pre>
+      <pre>CPS 630 Assignment 2 Iteration 1 <br>Team #20 <br>Due date: March 11, 2018</pre>
     </div>
     <div class="group-table">
       <pre>
