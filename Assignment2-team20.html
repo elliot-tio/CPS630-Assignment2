@@ -16,16 +16,55 @@
   <h1>Art Gallery Home</h1>
   <div class="topnav">
     <a href="">Home</a>
-    <a href="">About Us</a>
-    <a href="">Blog</a>
-    <a href=""><img src=https://image.flaticon.com/icons/png/512/34/34627.png width="14" height="20"></a>
+    <a href="#">About Us</a>
+    <a href="#">Blog</a>
+    <a href="#" id="amodal" onclick="myModal()"><img src=https://image.flaticon.com/icons/png/512/34/34627.png width="14" height="20"></a>
   </div><br></br>
+
+  <div id="mModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="modal-body">
+      </div>
+      <form>
+        <div class="">
+          <ul class="nItems">
+            <label for="num">Quantity:</label>
+            <li><select id="num" onchange="artQuantity(this)">
+              <option value="SQ">Select Quantity</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              </select></li><br>
+            <label for="artworks">Artworks:</label>
+            <li><select id="artworks" onchange="artworkSelect(this)">
+                <option value="pick">Select an Artwork</option>
+                <option value="Mona Lisa">Mona Lisa ($1,000,000,000 USD)</option>
+                <option value="De Matteis Triumph of the Immaculate Anagoria">De Matteis Triumph of the Immaculate Anagoria ($200,000,000 USD)</option>
+                <option value="The Delivery of the Keys to Saint Peter">The Delivery of the Keys to Saint Peter($999,999 USD)</option>
+                <option value="The Starry Night">The Starry Night ($300,000,000 USD)</option>
+                <option value="The Creation of Adam">The Creation of Adam($300,000 USD)</option>
+                </select></li><br>
+            <label for="ship">Shipping Method:</label>
+            <li><select id="SM" onchange="shipMethod(this)">
+            <option value="ssm">Select Shipping Method</option>
+            <option value="express">Express</option>
+            <option value="2DS">2-Day Shipping</option>
+            <option value="standard">Standard</option>
+            </select></li><br>
+            <button type="button" onclick="invoice()">Proceed to Checkout</button>
+        </div>
+      </form>
+    </div>
+  </div>
 
   <div class="window-container">
     <div class="left-window" id="left-window">
       <ul class="nav-bar">
-          <label for="artworks">Artworks:</label>
-          <li><select id="artworks" onchange="populateWindow(this)">
+        <label for="artworks">Artworks:</label>
+        <li><select id="artworks" onchange="populateWindow(this)">
             <option value="pick">Pick an Artwork</option>
             <option value="Mona Lisa">Mona Lisa</option>
             <option value="De Matteis Triumph of the Immaculate Anagoria">De Matteis Triumph of the Immaculate Anagoria</option>
@@ -33,8 +72,8 @@
             <option value="The Starry Night">The Starry Night</option>
             <option value="The Creation of Adam">The Creation of Adam</option>
           </select></li>
-          <label for="artists">Artists:</label>
-          <li><select id="artists" onchange="populateWindow(this)">
+        <label for="artists">Artists:</label>
+        <li><select id="artists" onchange="populateWindow(this)">
             <option value="pick">Pick an Artist</option>
             <option value="Leonardo da Vinci" id="1">Leonardo da Vinci</option>
             <option value="Vincent van Gogh">Vincent van Gogh</option>
@@ -42,8 +81,8 @@
             <option value="Claude Monet">Claude Monet</option>
             <option value="Pablo Picasso">Pablo Picasso</option>
           </select></li>
-          <label for="museums">Museums:</label>
-          <li><select id="museums" onchange="populateWindow(this)">
+        <label for="museums">Museums:</label>
+        <li><select id="museums" onchange="populateWindow(this)">
           <option value="pick">Pick an Museum</option>
           <option value="Stoa of Attalos">Stoa of Attalos</option>
           <option value="Louvre">Louvre</option>
@@ -51,8 +90,8 @@
           <option value="Miyanomori Art Museum">Miyanomori Art Museum</option>
           <option value="Benaki Museum">Benaki Museum</option>
           </select></li>
-        </ul>
-      </div>
+      </ul>
+    </div>
     <div class="middle-window" id="middle-window"></div>
     <div class="right-window" id="right-window"></div>
   </div>
