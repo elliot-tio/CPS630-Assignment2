@@ -196,12 +196,12 @@ function populateWindow2(aName) {
       {
         htmlContentMiddle = '<img src="images/leonardo-da-vinci.jpg" alt="Leonardo da Vinci">';
         htmlContentRight = '<a class="name">Leonardo da Vinci</a>' +
-        "<p>leonardo-da-vinci was an Italian Renaissance polymath whose fields of interests included: invention, painting architecture, science, math and many more.</p>\
-      <p>He is also known as the father of palaeontology, ichnology, and architecture. leonardo-da-vinci is also widely known as one of the greatest painters of all time and epitomizes the Renaissance humanist ideal</p>\
-      <p>Date of birth/death: April 15, 1452 - May 2, 1519</p>\
-      <p>Place of living: Italy</p>\
-      <p>Genre: Renaissance</p>\
-      <p>Famous artworks: Mona Lisa, The Last Supper</p>";
+        "<p>Leonardo-da-vinci was an Italian Renaissance polymath whose fields of interests included: invention, painting architecture, science, math and many more.</p>\
+        <p>He is also known as the father of palaeontology, ichnology, and architecture. Leonardo-da-vinci is also widely known as one of the greatest painters of all time and epitomizes the Renaissance humanist ideal.</p>\
+        <p>Date of birth/death: April 15, 1452 - May 2, 1519</p>\
+        <p>Place of living: Italy</p>\
+        <p>Genre: Renaissance</p>\
+        <p>Famous artworks: Mona Lisa, The Last Supper</p>";
         break;
       }
     case 'VVG':
