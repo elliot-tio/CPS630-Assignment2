@@ -1,6 +1,6 @@
 <?php
 echo '<div class="group-info">
-        <pre>CPS 630 Assignment 2 Iteration 2 <br>Team #20 <br>Due date: March 25, 2018</pre>
+        <pre>CPS 630 Assignment 2 Iteration 2 <br>Team #20 <br>Due date: April 6, 2018</pre>
       </div>
       <div class="group-table">
         <pre>

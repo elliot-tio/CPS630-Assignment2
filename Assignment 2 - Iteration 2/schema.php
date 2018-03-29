@@ -94,7 +94,7 @@ if ($conn->query($sql) === TRUE) {
 
 // Create Artworks
 $sql = "CREATE TABLE Artworks (
-	artworks_id INT(100) NOT NULL AUTO_INCREMENT,
+	artwork_id INT(100) NOT NULL AUTO_INCREMENT,
 	images_id INT(100) UNSIGNED NOT NULL,
 	imagel_id INT(100) UNSIGNED NOT NULL,
 	artist_id INT(100) UNSIGNED NOT NULL,
@@ -105,7 +105,7 @@ $sql = "CREATE TABLE Artworks (
 	artwork_date VARCHAR(100) NOT NULL,
 	artwork_type VARCHAR(100) NOT NULL,
 	description VARCHAR(255) NOT NULL,
-	PRIMARY KEY(artworks_id),
+	PRIMARY KEY(artwork_id),
 	FOREIGN KEY(images_id) REFERENCES Image_s(images_id) ON DELETE CASCADE,
 	FOREIGN KEY(imagel_id) REFERENCES Image_l(imagel_id) ON DELETE CASCADE,
 	FOREIGN KEY(artist_id) REFERENCES Artists(artist_id) ON DELETE CASCADE,
@@ -119,35 +119,36 @@ if ($conn->query($sql) === TRUE) {
   echo "Error creating table: " . $conn->error;
 }
 
+$sql = "CREATE TABLE ShoppingCart (
+	SC_id INT(100) UNSIGNED NOT NULL AUTO_INCREMENT,
+	artwork_id INT(100) UNSIGNED NOT NULL,
+	price INT(100) UNSIGNED NOT NULL,
+	Quantity INT(100) UNSIGNED NOT NULL,
+	S_method VARCHAR(100) NOT NULL,
+	PRIMARY KEY(SC_id),
+	FOREIGN KEY(artwork_id) REFERENCES Artworks(artwork_id)
+)";
+
 if ($conn->query($sql) === TRUE) {
-  echo "Added row to Artworks successfully";
+  echo "Table ShoppingCart created successfully";
+} else {
+  echo "Error creating table: " . $conn->error;
+}
+
+$sql = "CREATE TABLE Review (
+	review_id INT(100) UNSIGNED NOT NULL AUTO_INCREMENT,
+	review_value INT(100) UNSIGNED NOT NULL,
+	artwork_id INT(100) UNSIGNED NOT NULL,
+	PRIMARYKEY(review_id),
+	FOREIGN KEY(artwork_id) REFERENCES Artworks(artwork_id)
+)";
+
+if ($conn->query($sql) === TRUE) {
+  echo "Table Review created successfully";
 } else {
   echo "Error creating table: " . $conn->error;
 }
 
 $conn->close();
 
-/*
-
-CREATE TABLE ShoppingCart{
-
-	SC_id INT(100) UNSIGNED NOT NULL AUTO_INCREMENT,
-	artwork_id INT,
-	price INT(100), UNSIGNED NOT NULL,
-	Quantity INT(100) UNSIGNED NOT NULL,
-	S_method VARCHAR(100) NOT NULL,
-	PRIMARY KEY(SC_id),
-	FOREIGN KEY(artwork_id) REFERENCES Artworks(artwork_id)
-
-};
-
-CREATE TABLE Review{
-
-	review_id INT(100) UNSIGNED NOT NULL AUTO_INCREMENT,
-	artwork_id INT,
-	PRIMARYKEY(review_id),
-	FOREIGN KEY(artwork_id) REFERENCES Artworks(artwork_id)
-
-}
-*/
 ?>
