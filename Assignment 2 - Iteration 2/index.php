@@ -1,4 +1,5 @@
 <?php include 'controller.php';?>
+<?php include 'schema.php';?>
 <!DOCTYPE html>
 <html lang="en">
 

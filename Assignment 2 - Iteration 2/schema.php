@@ -8,6 +8,11 @@ $dbname = "cps630assignment2";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
 // Create Image_s
 $sql = "CREATE TABLE Image_s (
 	images_id INT(100) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -15,11 +20,12 @@ $sql = "CREATE TABLE Image_s (
 	PRIMARY KEY(images_id)
 )";
 
-if ($conn->query($sql) === TRUE) {
-    echo "Table Images created successfully";
-} else {
-    echo "Error creating table: " . $conn->error;
-}
+$conn->query($sql);
+// if ($conn->query($sql) === TRUE) {
+//     echo "Table Images created successfully";
+// } else {
+//     echo "Error creating table: " . $conn->error;
+// }
 
 // Create Image_l
 $sql = "CREATE TABLE Image_l (
@@ -28,11 +34,12 @@ $sql = "CREATE TABLE Image_l (
   PRIMARY KEY (imagel_id)
 )";
 
-if ($conn->query($sql) === TRUE) {
-  echo "Table Image_l created successfully";
-} else {
-  echo "Error creating table: " . $conn->error;
-}
+$conn->query($sql);
+// if ($conn->query($sql) === TRUE) {
+//   echo "Table Image_l created successfully";
+// } else {
+//   echo "Error creating table: " . $conn->error;
+// }
 
 // Create Galleries
 $sql = "CREATE TABLE Galleries (
@@ -41,11 +48,12 @@ $sql = "CREATE TABLE Galleries (
 	PRIMARY KEY(gallery_id)
 )";
 
-if ($conn->query($sql) === TRUE) {
-  echo "Table Galleries created successfully";
-} else {
-  echo "Error creating table: " . $conn->error;
-}
+$conn->query($sql);
+// if ($conn->query($sql) === TRUE) {
+//   echo "Table Galleries created successfully";
+// } else {
+//   echo "Error creating table: " . $conn->error;
+// }
 
 // Create Genre
 $sql = "CREATE TABLE Genre (
@@ -54,11 +62,12 @@ $sql = "CREATE TABLE Genre (
 	PRIMARY KEY(genre_id)
 )";
 
-if ($conn->query($sql) === TRUE) {
-  echo "Table Genre created successfully";
-} else {
-  echo "Error creating table: " . $conn->error;
-}
+$conn->query($sql);
+// if ($conn->query($sql) === TRUE) {
+//   echo "Table Genre created successfully";
+// } else {
+//   echo "Error creating table: " . $conn->error;
+// }
 
 // Create Subject
 $sql = "CREATE TABLE Subject (
@@ -67,11 +76,12 @@ $sql = "CREATE TABLE Subject (
 	PRIMARY KEY(subject_id)
 )";
 
-if ($conn->query($sql) === TRUE) {
-  echo "Table Subject created successfully";
-} else {
-  echo "Error creating table: " . $conn->error;
-}
+$conn->query($sql);
+// if ($conn->query($sql) === TRUE) {
+//   echo "Table Subject created successfully";
+// } else {
+//   echo "Error creating table: " . $conn->error;
+// }
 
 // Create Artists
 $sql = "CREATE TABLE Artists (
@@ -86,15 +96,16 @@ $sql = "CREATE TABLE Artists (
 	FOREIGN KEY(genre_id) REFERENCES Genre(genre_id) ON DELETE CASCADE
 )";
 
-if ($conn->query($sql) === TRUE) {
-  echo "Table Artists created successfully";
-} else {
-  echo "Error creating table: " . $conn->error;
-}
+$conn->query($sql);
+// if ($conn->query($sql) === TRUE) {
+//   echo "Table Artists created successfully";
+// } else {
+//   echo "Error creating table: " . $conn->error;
+// }
 
 // Create Artworks
 $sql = "CREATE TABLE Artworks (
-	artwork_id INT(100) NOT NULL AUTO_INCREMENT,
+	artwork_id INT(100) UNSIGNED NOT NULL AUTO_INCREMENT,
 	images_id INT(100) UNSIGNED NOT NULL,
 	imagel_id INT(100) UNSIGNED NOT NULL,
 	artist_id INT(100) UNSIGNED NOT NULL,
@@ -113,11 +124,12 @@ $sql = "CREATE TABLE Artworks (
 	FOREIGN KEY(subject_id) REFERENCES Subject(subject_id) ON DELETE CASCADE
 )";
 
-if ($conn->query($sql) === TRUE) {
-  echo "Table Artworks created successfully";
-} else {
-  echo "Error creating table: " . $conn->error;
-}
+$conn->query($sql);
+// if ($conn->query($sql) === TRUE) {
+//   echo "Table Artworks created successfully";
+// } else {
+//   echo "Error creating table: " . $conn->error;
+// }
 
 $sql = "CREATE TABLE ShoppingCart (
 	SC_id INT(100) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -129,25 +141,27 @@ $sql = "CREATE TABLE ShoppingCart (
 	FOREIGN KEY(artwork_id) REFERENCES Artworks(artwork_id)
 )";
 
-if ($conn->query($sql) === TRUE) {
-  echo "Table ShoppingCart created successfully";
-} else {
-  echo "Error creating table: " . $conn->error;
-}
+$conn->query($sql);
+// if ($conn->query($sql) === TRUE) {
+//   echo "Table ShoppingCart created successfully";
+// } else {
+//   echo "Error creating table: " . $conn->error;
+// }
 
 $sql = "CREATE TABLE Review (
 	review_id INT(100) UNSIGNED NOT NULL AUTO_INCREMENT,
 	review_value INT(100) UNSIGNED NOT NULL,
 	artwork_id INT(100) UNSIGNED NOT NULL,
-	PRIMARYKEY(review_id),
+	PRIMARY KEY(review_id),
 	FOREIGN KEY(artwork_id) REFERENCES Artworks(artwork_id)
 )";
 
-if ($conn->query($sql) === TRUE) {
-  echo "Table Review created successfully";
-} else {
-  echo "Error creating table: " . $conn->error;
-}
+$conn->query($sql);
+// if ($conn->query($sql) === TRUE) {
+//   echo "Table Review created successfully";
+// } else {
+//   echo "Error creating table: " . $conn->error;
+// }
 
 $conn->close();
 
