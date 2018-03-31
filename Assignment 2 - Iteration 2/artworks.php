@@ -1,6 +1,3 @@
-<?php include 'controller.php';?>
-<?php include 'schema.php';?>
-<?php include 'populate.php';?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,8 +24,12 @@
     <div class="left-window" id="left-window">
       <?php include "includes/_dropdowns.php";?>
     </div>
-    <div class="middle-window" id="middle-window"></div>
-    <div class="right-window" id="right-window"></div>
+    <div class="middle-window" id="middle-window">
+      <?php include "includes/_selected_artwork_image.php";?>
+    </div>
+    <div class="right-window" id="right-window">
+      <?php include "includes/_selected_artwork_info.php";?>
+    </div>
   </div>
 
   <div class="container">

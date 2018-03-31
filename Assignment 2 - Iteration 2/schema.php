@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "admin";
-$dbname = "cps630assignment2";
+$dbname = "artstore";
 
 // TODO: Create tables
 
@@ -16,7 +16,7 @@ if ($conn->connect_error) {
 // Create Image_s
 $sql = "CREATE TABLE Image_s (
 	images_id INT(100) UNSIGNED NOT NULL AUTO_INCREMENT,
-	image_s VARCHAR(100) NOT NULL,
+	image_s VARCHAR(100) NOT NULL UNIQUE,
 	PRIMARY KEY(images_id)
 )";
 
@@ -30,7 +30,7 @@ $conn->query($sql);
 // Create Image_l
 $sql = "CREATE TABLE Image_l (
   imagel_id INT(100) UNSIGNED NOT NULL AUTO_INCREMENT,
-  image_l VARCHAR(100) NOT NULL,
+  image_l VARCHAR(100) NOT NULL UNIQUE,
   PRIMARY KEY (imagel_id)
 )";
 
@@ -44,7 +44,7 @@ $conn->query($sql);
 // Create Galleries
 $sql = "CREATE TABLE Galleries (
 	gallery_id INT(100) UNSIGNED NOT NULL AUTO_INCREMENT,
-	gallery_name VARCHAR(100) NOT NULL,
+	gallery_name VARCHAR(100) NOT NULL UNIQUE,
 	PRIMARY KEY(gallery_id)
 )";
 
@@ -58,7 +58,7 @@ $conn->query($sql);
 // Create Genre
 $sql = "CREATE TABLE Genre (
 	genre_id INT(100) UNSIGNED NOT NULL AUTO_INCREMENT,
-	genre_name VARCHAR(100) NOT NULL,
+	genre_name VARCHAR(100) NOT NULL UNIQUE,
 	PRIMARY KEY(genre_id)
 )";
 
@@ -72,7 +72,7 @@ $conn->query($sql);
 // Create Subject
 $sql = "CREATE TABLE Subject (
 	subject_id INT(100) UNSIGNED NOT NULL AUTO_INCREMENT,
-	subject_name VARCHAR(100) NOT NULL,
+	subject_name VARCHAR(100) NOT NULL UNIQUE,
 	PRIMARY KEY(subject_id)
 )";
 
@@ -86,7 +86,6 @@ $conn->query($sql);
 // Create Artists
 $sql = "CREATE TABLE Artists (
 	artist_id INT(100) UNSIGNED NOT NULL AUTO_INCREMENT,
-	artwork_id INT(100) UNSIGNED NOT NULL,
 	genre_id INT(100) UNSIGNED NOT NULL,
 	artist_name VARCHAR(100) NOT NULL,
 	DOB VARCHAR(100) NOT NULL,
@@ -106,8 +105,8 @@ $conn->query($sql);
 // Create Artworks
 $sql = "CREATE TABLE Artworks (
 	artwork_id INT(100) UNSIGNED NOT NULL AUTO_INCREMENT,
-	images_id INT(100) UNSIGNED NOT NULL,
-	imagel_id INT(100) UNSIGNED NOT NULL,
+	images_id INT(100) UNSIGNED NOT NULL UNIQUE,
+	imagel_id INT(100) UNSIGNED NOT NULL UNIQUE,
 	artist_id INT(100) UNSIGNED NOT NULL,
 	genre_id INT(100) UNSIGNED NOT NULL,
 	subject_id INT(100) UNSIGNED NOT NULL,
