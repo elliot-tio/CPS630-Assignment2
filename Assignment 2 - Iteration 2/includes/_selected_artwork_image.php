@@ -17,7 +17,7 @@ $sql = "SELECT image_s.image_s FROM artworks INNER JOIN image_s ON image_s.image
 
 $result = $conn->query($sql)->fetch_assoc();
 
-echo "<img src=" . $result['image_s'] . " alt='Mona Lisa'>";
+echo "<img src=" . $result['image_s'] . ">";
 
 $conn->close();
 

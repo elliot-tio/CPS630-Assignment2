@@ -1,6 +1,4 @@
 <?php include 'controller.php';?>
-<?php include 'schema.php';?>
-<?php include 'populate.php';?>
 <!DOCTYPE html>
 <html lang="en">
 

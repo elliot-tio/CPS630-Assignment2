@@ -1,4 +1,5 @@
 <?php
+
 $servername = "localhost";
 $username = "root";
 $password = "admin";
@@ -85,12 +86,16 @@ $conn->query($sql);
 
 // Create Artists
 $sql = "CREATE TABLE Artists (
+  images_id INT(100) UNSIGNED NOT NULL UNIQUE,
+	imagel_id INT(100) UNSIGNED NOT NULL UNIQUE,
 	artist_id INT(100) UNSIGNED NOT NULL AUTO_INCREMENT,
 	genre_id INT(100) UNSIGNED NOT NULL,
-	artist_name VARCHAR(100) NOT NULL,
+	artist_name VARCHAR(100) NOT NULL UNIQUE,
 	DOB VARCHAR(100) NOT NULL,
 	POL VARCHAR(100) NOT NULL,
+  famous_works VARCHAR(100) NOT NULL,
 	description VARCHAR(255) NOT NULL,
+  more_info VARCHAR(255) NOT NULL,
 	PRIMARY KEY(artist_id),
 	FOREIGN KEY(genre_id) REFERENCES Genre(genre_id) ON DELETE CASCADE
 )";
@@ -110,11 +115,14 @@ $sql = "CREATE TABLE Artworks (
 	artist_id INT(100) UNSIGNED NOT NULL,
 	genre_id INT(100) UNSIGNED NOT NULL,
 	subject_id INT(100) UNSIGNED NOT NULL,
+  dimensions VARCHAR(100) NOT NULL,
+  location VARCHAR(100) NOT NULL,
 	artwork_name VARCHAR(100) NOT NULL,
 	price INT(100) UNSIGNED NOT NULL,
 	artwork_date VARCHAR(100) NOT NULL,
 	artwork_type VARCHAR(100) NOT NULL,
 	description VARCHAR(255) NOT NULL,
+  more_info VARCHAR(255) NOT NULL,
 	PRIMARY KEY(artwork_id),
 	FOREIGN KEY(images_id) REFERENCES Image_s(images_id) ON DELETE CASCADE,
 	FOREIGN KEY(imagel_id) REFERENCES Image_l(imagel_id) ON DELETE CASCADE,
