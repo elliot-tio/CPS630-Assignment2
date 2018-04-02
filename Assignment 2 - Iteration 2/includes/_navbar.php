@@ -4,7 +4,13 @@ echo '<div class="topnav">
         <a href="#">About Us</a>
         <a href="#">Blog</a>
         <a href="#" id="amodal" onmousedown="myModal()"><img src=https://image.flaticon.com/icons/png/512/34/34627.png width="14" height="20"></a>
-        <a href="#" class="pull-right">Search</a>
+        <a href="#" class="pull-right" onmousedown="toggleBar()">Search</a>
+        <div id="bar" class="search-bar" style="display:none;">
+    			<form action= "searchbar.php" method="post">
+    				<input type="text" placeholder="Search.." name="in_search" autofocus>
+    				<button type="submit" name="search"><img src="http://worldartsme.com/images/search-button-clipart-1.jpg" width=20; height=20;></button>
+    			</form>
+    		</div>
         <a href="#" class="pull-right">Maintain</a>
       </div><br></br>';
 ?>

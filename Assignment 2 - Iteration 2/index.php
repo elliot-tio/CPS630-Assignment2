@@ -1,4 +1,4 @@
-<?php include 'controller.php';?>
+<?php include 'model/controller.php';?>
 <!DOCTYPE html>
 <html lang="en">
 

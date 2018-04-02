@@ -94,8 +94,8 @@ $sql = "CREATE TABLE Artists (
 	DOB VARCHAR(100) NOT NULL,
 	POL VARCHAR(100) NOT NULL,
   famous_works VARCHAR(100) NOT NULL,
-	description VARCHAR(255) NOT NULL,
-  more_info VARCHAR(255) NOT NULL,
+	description TEXT NOT NULL,
+  more_info TEXT NOT NULL,
 	PRIMARY KEY(artist_id),
 	FOREIGN KEY(genre_id) REFERENCES Genre(genre_id) ON DELETE CASCADE
 )";
@@ -121,8 +121,8 @@ $sql = "CREATE TABLE Artworks (
 	price INT(100) UNSIGNED NOT NULL,
 	artwork_date VARCHAR(100) NOT NULL,
 	artwork_type VARCHAR(100) NOT NULL,
-	description VARCHAR(255) NOT NULL,
-  more_info VARCHAR(255) NOT NULL,
+	description TEXT NOT NULL,
+  more_info TEXT NOT NULL,
 	PRIMARY KEY(artwork_id),
 	FOREIGN KEY(images_id) REFERENCES Image_s(images_id) ON DELETE CASCADE,
 	FOREIGN KEY(imagel_id) REFERENCES Image_l(imagel_id) ON DELETE CASCADE,

@@ -13,6 +13,18 @@ var quantityP = 'Did not select quantity';
 var tax = 1.13;
 var shipping = 0;
 
+function toggleBar() {
+
+  var sbar = document.getElementById('bar');
+
+  if (sbar.style.display === "none"){
+    sbar.style.display = "block";
+  } else {
+    sbar.style.display = "none";
+  }
+
+}
+
 function myModal() {
 
   var opt = document.getElementById("amodal");
