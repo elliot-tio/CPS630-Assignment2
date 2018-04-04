@@ -4,6 +4,7 @@ body, html {
   height: 100%;
   width: 100%;
   padding: 0;
+  line-height: 1.5;
 }
 
 html {
@@ -60,6 +61,10 @@ img {
 
 #left-window:empty, #right-window:empty, #middle-window:empty {
   display: none;
+}
+
+#right-window {
+  line-height: 1.5;
 }
 
 .middle-window img {

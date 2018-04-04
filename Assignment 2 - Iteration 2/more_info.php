@@ -7,6 +7,11 @@ $artworks = array('De Matteis Triumph of the Immaculate Anagoria',
                   'Mona Lisa',
                   'The Delivery of the Keys to Saint Peter',
                   'The Starry Night');
+$museums = array('Stoa of Attalos',
+                  'Louvre',
+                  'Royal Ontario Museum',
+                  'Miyanomori Art Museum',
+                  'Benaki Museum');
 ?>
 
 <head>
@@ -35,6 +40,8 @@ $artworks = array('De Matteis Triumph of the Immaculate Anagoria',
       <?php
         if (in_array($_GET['value_key'], $artworks)) {
           include "includes/_selected_artwork_image.php";
+        } else if (in_array($_GET['value_key'], $museums)) {
+          include "includes/_selected_museum_image.php";
         } else {
           include "includes/_selected_artist_image.php";
         }
@@ -44,6 +51,8 @@ $artworks = array('De Matteis Triumph of the Immaculate Anagoria',
       <?php
         if (in_array($_GET['value_key'], $artworks)) {
           include "includes/_selected_artwork_info.php";
+        } else if (in_array($_GET['value_key'], $museums)) {
+          include "includes/_selected_museum_info.php";
         } else {
           include "includes/_selected_artist_info.php";
         }

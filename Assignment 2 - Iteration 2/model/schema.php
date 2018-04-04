@@ -45,7 +45,12 @@ $conn->query($sql);
 // Create Galleries
 $sql = "CREATE TABLE Galleries (
 	gallery_id INT(100) UNSIGNED NOT NULL AUTO_INCREMENT,
+  images_id INT(100) UNSIGNED NOT NULL UNIQUE,
+	imagel_id INT(100) UNSIGNED NOT NULL UNIQUE,
 	gallery_name VARCHAR(100) NOT NULL UNIQUE,
+  famous_works VARCHAR(100) NOT NULL,
+  description TEXT NOT NULL,
+  more_info TEXT NOT NULL,
 	PRIMARY KEY(gallery_id)
 )";
 

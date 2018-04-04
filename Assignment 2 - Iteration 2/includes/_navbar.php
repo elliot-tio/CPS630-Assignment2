@@ -3,7 +3,7 @@ echo '<div class="topnav">
         <a href="index.php">Home</a>
         <a href="#">About Us</a>
         <a href="#">Blog</a>
-        <a href="#" id="amodal" onmousedown="myModal()"><img src=https://image.flaticon.com/icons/png/512/34/34627.png width="14" height="20"></a>
+        <a href="#" id="amodal" onmousedown="myModal()"><img src=https://image.flaticon.com/icons/png/512/34/34627.png width="25" height="25"></a>
         <a href="#" class="pull-right" onmousedown="toggleBar()">Search</a>
         <div id="bar" class="search-bar" style="display:none;">
     			<form action= "searchbar.php" method="post">
