@@ -11,19 +11,19 @@
 			<h1>Maintain Mode</h1>
 		</tr>
 		<td>
-	
-			<button onClick="window.location='addElementsTable.php';">Add</button>
-	
-			<button onClick="window.location='deleteElementsTable.php';">Delete</button>
-			
+
+			<button onClick="window.location='maintain/addElementsTable.php';"> Add </button>
+
+			<button onClick="window.location='maintain/deleteElementsTable.php';"> Delete </button>
+
+			<button onClick="window.location='maintain/modifyElementsTable.php';"> Modify </button>
 		</td>
 		<tr>
 		<td>
-			
+
 			 <button onClick="window.location='index.php';"> Back to Art Gallery</button>
 		</td>
 		</tr>
 	</table>
 </body>
 </html>
-	

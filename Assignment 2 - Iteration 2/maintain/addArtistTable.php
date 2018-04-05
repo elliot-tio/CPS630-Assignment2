@@ -11,10 +11,10 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "INSERT INTO Artists(images_id, imagel_id, genre_id, artist_name, DOB, POL, famous_works, description, more_info)
-            VALUES($_POST[addImageIDAT],$_POST[imagel_id],'$_POST[addGenreIDAT]',
-                  '$_POST[addArtistAT]','$_POST[addDOBAT]','$_POST[addPOLAT]',
-                  '$_POST[addFamousAT]','$_POST[addDescriptionAT]','$_POST[addInfoAT]')";
+$sql="INSERT INTO Artists(images_id, imagel_id, genre_id, artist_name, DOB, POL, famous_works, description, more_info)
+VALUES($_POST[addImageIDAT],$_POST[addImageLIDAT],$_POST[addGenreIDAT],
+'$_POST[addArtistAT]','$_POST[addDOBAT]','$_POST[addPOLAT]',
+'$_POST[addFamousAT]','$_POST[addDescriptionAT]','$_POST[addInfoAT]')";
 
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
