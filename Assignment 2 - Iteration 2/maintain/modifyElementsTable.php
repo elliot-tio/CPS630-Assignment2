@@ -9,10 +9,10 @@
 
 <form action="modifyArtistTable.php" method="post">
 	<h1>Maintain Mode Modify</h1>
-	
+
 					Artist
 			<br>
-			
+
 			Image ID <input type ="text" name="modImageIDAT" >
 			<br>
 			ImageL ID<input type ="text" name="modImageLIDAT" >
@@ -37,7 +37,7 @@
 		<br>
 <form action="modifyArtworkTable.php" method="post">
 		<table>
-		
+
 		Artwork
 			<br>
 			Image ID<input type ="text" name="modImageIDAW" >
@@ -69,13 +69,10 @@
 			<input type ="submit" value="Update">
 		</table>
 </form>
-	
-	
+
+
 		<br>
-	
-		 <button onClick="window.location='maintain.php';"> Back to Maintain Mode</button>
+
+		 <button onClick="window.location='../maintain.php';"> Back to Maintain Mode</button>
 </body>
 </html>
-	
-
-
