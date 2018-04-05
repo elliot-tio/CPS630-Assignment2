@@ -11,6 +11,6 @@ echo '<div class="topnav">
     				<button type="submit" name="search"><img src="http://worldartsme.com/images/search-button-clipart-1.jpg" width=20; height=20;></button>
     			</form>
     		</div>
-        <a href="#" class="pull-right">Maintain</a>
+        <a href="maintain.php" class="pull-right">Maintain</a>
       </div><br></br>';
 ?>
