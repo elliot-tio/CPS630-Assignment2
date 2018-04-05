@@ -33,7 +33,7 @@ $museums = array('Stoa of Attalos',
     <?php include "includes/_shopping_cart.php";?>
   </div>
 
-  <div class="window-container">
+  <div class="window-container more-info">
     <div class="left-window" id="left-window">
     </div>
     <div class="middle-window" id="middle-window">

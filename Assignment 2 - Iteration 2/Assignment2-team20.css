@@ -35,13 +35,18 @@ img {
 }
 
 .window-container {
-  height: 65%;
+  height: 65vh;
   margin-top: 30px;
   display: flex;
 }
 
+.more-info {
+  height: 100vh;
+}
+
 .container {
   margin-top: 20px;
+  width: 50%;
 }
 
 .name {
@@ -191,6 +196,14 @@ table, td, th {
 
 .topnav .search-bar button:hover {
   background: #ccc;
+}
+
+.val {
+  position: fixed;
+  border: 3px solid black;
+  bottom: 100px;
+  right: 100px;
+  width: 350px;
 }
 
 @media screen and (max-width: 600px) {
