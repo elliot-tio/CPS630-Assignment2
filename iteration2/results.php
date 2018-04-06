@@ -20,14 +20,15 @@
     <?php include "includes/_shopping_cart.php";?>
   </div>
 
+  <div class="container">
+    <?php include "includes/_footer.php";?>
+  </div>
+
   <div class="val">
     <p><strong>Results:</strong></p>
     <?php include "includes/_search.php"; ?>
   </div>
 
-  <div class="container">
-    <?php include "includes/_footer.php";?>
-  </div>
 
   <script type="text/javascript" src="Assignment2-team20.js" charset="utf-8"></script>
 </body>

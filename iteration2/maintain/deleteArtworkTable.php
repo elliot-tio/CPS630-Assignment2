@@ -12,7 +12,7 @@ if ($conn->connect_error) {
 }
 
 // sql to delete a record
-$sql = "DELETE FROM Artworks WHERE images_id=$_POST[deleteImageIDAW]";
+$sql = "DELETE FROM Artworks WHERE artwork_id=$_POST[deleteImageIDAW]";
 
 if ($conn->query($sql) === TRUE) {
     echo "Record deleted successfully";

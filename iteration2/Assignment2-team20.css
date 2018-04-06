@@ -3,7 +3,7 @@ body, html {
   overflow-y: hidden;
   padding: 0;
   line-height: 1.5;
-  height: auto;
+  height: 100%;
 }
 
 html {
@@ -12,7 +12,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   overflow: auto;
-  height: auto;
+  height: 100%;
   width: 100%;
 }
 
@@ -35,13 +35,13 @@ img {
 }
 
 .window-container {
-  height: 65vh;
+  height: 60vh;
   margin-top: 30px;
   display: flex;
 }
 
 .more-info {
-  height: 100vh;
+  max-height: 100%;
 }
 
 .container {
@@ -199,10 +199,10 @@ table, td, th {
 }
 
 .val {
-  position: fixed;
+  position: relative;
   border: 3px solid black;
-  bottom: 100px;
-  right: 100px;
+  left: 80%;
+  top: 35%;
   width: 350px;
 }
 

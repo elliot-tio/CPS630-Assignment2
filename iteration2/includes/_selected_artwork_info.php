@@ -1,7 +1,7 @@
 <?php
 
 function asDollars($value) {
-  return '$CAD ' . number_format($value, 2);
+  return '$USD ' . number_format($value, 2);
 }
 
 $servername = "localhost";
