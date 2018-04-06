@@ -1,0 +1,25 @@
+Technical Report: CPS630 Assignment 2
+
+Due Date: March 11th 2018, 11:30 PM
+
+Group Members: 
+
+Alex Zhou 500714525
+Elliot Tio 500740959
+Marcus Choi 500628295
+
+HTML:
+
+For our HTML, we took the basis of Assignment 1 and altered it. We included a navigation bar that had the fields for "Home", "Blog", "About Us", and the shopping cart. When the shopping cart is clicked it will open a modal; the modal also contains a submit button. We also created a div class "modal" which holds the modal content that will be displayed after accessing the modal. In addition, we moved the drop boxes to the side and created two boxes that surround both the description and the images.
+
+CSS:
+
+The CSS contains the web page transformations for the background, the modal effects, text changes, displacement, and forms the tables that surround the selected artwork and its corresponding description. The css resizes the modal into a medium size box and it automatically resizes the box when the browser is minimize or full screen. The css also changes the navigation bar's colour and along with the size of the icons and font of each icons.
+
+JavaScript:
+
+For the Javascript, we created a "myModal" function that occurs in response to when the shopping cart is clicked, display the modal that will prompt the user to select the quantity, the item, and the shipping method. When the user finishes selecting, there is a "Proceed to CheckOut" button that will redirect the user to a page that displays the invoice including tax and total cost.
+
+We have a invoice function that contains the body which actually displays the content and retrieves it from the selected options in the list. In addition, we have other functions that do indivual parts as the function name implies "artWorkSelect()", "shipMethod()", and "artQuantity()" which contains switch statements that contains the cases for when an option in the list is selected.
+
+The populateWindow() function was kept from Assignment 1 where they display the information and images that correspond to the selected option in the drop down list. A new function called populateWindow2() was created so that when the name of the artist/artwork is clicked, it will display the same image but with a more detailed description. The name was inlined with the <a> tag with an onclick() function in populateWindow() so that it will call populateWindow2().
