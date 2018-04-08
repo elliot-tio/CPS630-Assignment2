@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xsl/Subject.xsl"?>
+
+<Subjects>
+
+  <Subject ID="1">
+    <subject_id>1</subject_id>
+    <subject_name>Portrait</subject_name>
+  </Subject>
+
+  <Subject ID="2">
+    <subject_id>2</subject_id>
+    <subject_name>Religious Theme</subject_name>
+  </Subject>
+
+  <Subject ID="3">
+    <subject_id>3</subject_id>
+    <subject_name>Landscape</subject_name>
+  </Subject>
+
+</Subjects>

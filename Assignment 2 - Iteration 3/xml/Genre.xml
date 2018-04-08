@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Genre.xsl"?>
+
+<Genre>
+
+  <genre_id>1</genre_id>
+  <genre_name>Renaissance</genre_name>
+
+  <genre_id>2</genre_id>
+  <genre_name>Post-Impressionism</genre_name>
+
+  <genre_id>3</genre_id>
+  <genre_name>Impressionism</genre_name>
+
+  <genre_id>4</genre_id>
+  <genre_name>Surrealism</genre_name>
+
+  <genre_id>5</genre_id>
+  <genre_name>Cubism</genre_name>
+
+  <genre_id>6</genre_id>
+  <genre_name>Baroque</genre_name>
+
+</Genre>

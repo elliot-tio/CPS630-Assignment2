@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Image_l.xsl"?>
+
+<Image_l>
+
+  <images_id>1</images_id>
+  <image_s>images/leonardo-da-vinci.jpg</image_s>
+
+  <images_id>2</images_id>
+  <image_s>images/michelangelo.jpg</image_s>
+
+  <images_id>3</images_id>
+  <image_s>images/monet.jpg</image_s>
+
+  <images_id>4</images_id>
+  <image_s>images/picasso.jpg</image_s>
+
+  <images_id>5</images_id>
+  <image_s>images/van-gogh.jpg</image_s>
+
+  <images_id>6</images_id>
+  <image_s>images/baroque1.jpg</image_s>
+
+  <images_id>7</images_id>
+  <image_s>images/creation-of-adam.jpg</image_s>
+
+  <images_id>8</images_id>
+  <image_s>images/realism2.jpg</image_s>
+
+  <images_id>9</images_id>
+  <image_s>images/renaissance.jpg</image_s>
+
+  <images_id>10</images_id>
+  <image_s>images/starry-night.jpg</image_s>
+
+  <images_id>11</images_id>
+  <image_s>images/stoa.jpg</image_s>
+
+  <images_id>12</images_id>
+  <image_s>images/louvre.jpg</image_s>
+
+  <images_id>13</images_id>
+  <image_s>images/rom.jpg</image_s>
+
+  <images_id>14</images_id>
+  <image_s>images/miyanomori.jpg</image_s>
+
+  <images_id>15</images_id>
+  <image_s>images/benaki.jpg</image_s>
+
+</Image_l>

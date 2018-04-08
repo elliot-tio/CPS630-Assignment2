@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Artists.xsl"?>
+
+<Artists>
+
+  <Artist ID="1">
+    <artist_id>1</artist_id>
+    <images_id>1</images_id>
+    <imagel_id>1</imagel_id>
+    <genre_id>1</genre_id>
+    <artist_name>Leonardo da Vinci</artist_name>
+    <DOB>April 15, 1452 - May 2, 1519</DOB>
+    <POL>Italy</POL>
+    <famous_works>Mona Lisa, The Last Supper</famous_works>
+    <description>
+      <p>Leonardo di ser Piero da Vinci or commonly know as Leonardo. He is an italian Renaissance artist, and an inventor. He painted the Mona Lisa and is world famous for it.</p>
+    </description>
+    <more_info>
+      <p>Leonardo-da-vinci was an Italian Renaissance polymath whose fields of interests included: invention, painting architecture, science, math and many more.</p>
+      <p>He is also known as the father of palaeontology, ichnology, and architecture. Leonardo-da-vinci is also widely known as one of the greatest painters of all time and epitomizes the Renaissance humanist ideal.</p>
+    </more_info>
+  </Artist>
+
+  <Artist ID="2">
+    <artist_id>2</artist_id>
+    <images_id>2</images_id>
+    <imagel_id>2</imagel_id>
+    <genre_id>3</genre_id>
+    <artist_name>Michelangelo</artist_name>
+    <DOB>November 14, 1840 - December 5, 1926</DOB>
+    <POL>France</POL>
+    <famous_works>David, Sistine Chapel ceiling</famous_works>
+    <description>
+      <p>Michelangelo di Lodovico Buonarroti Simoni or commonly known as Michelangelo. He is a man of culture, a man of sculpture, and a man of Christian artwork. He painted and sculpted during the High Renaissance, and is largely considered one of the
+        greatest artists of all time. See: The Creation of Adam and other works.</p>
+    </description>
+    <more_info>
+      <p>Michelangelo di Lodovico Buonarroti Simoni was born in the Republic of Florence, and exterted an unparalleled influence on the development of Western art.</p>
+      <p>He is considered by some as the greatest artist of all time. Despite creating artworks outside of his field, it was of such high quality that he is often cosidered a contender for the title of archetypal Renaissance man.</p>
+    </more_info>
+  </Artist>
+
+  <Artist ID="3">
+    <artist_id>3</artist_id>
+    <images_id>3</images_id>
+    <imagel_id>3</imagel_id>
+    <genre_id>1</genre_id>
+    <artist_name>Claude Monet</artist_name>
+    <DOB>April 15, 1452 - May 2, 1519</DOB>
+    <POL>Italy</POL>
+    <famous_works>Impression - Sunrise, Water Lilies</famous_works>
+    <description>
+      <p>Oscar Claude Monet left his impression on this world as the founder of French Impressionist painting, creating works based on nature and of everyday life. One of the greatest 19th century painters to have graced the Earth.</p>
+    </description>
+    <more_info>
+      <p>Oscar Claude Monet was a famous French impressionist artist. The term impressionalism was derived from the title of his painting Impression.</p>
+      <p>Monet and his ambition for documenting French countryside led to the formation of him painting the same scene many times under several conditions</p>
+    </more_info>
+  </Artist>
+
+  <Artist ID="4">
+    <artist_id>4</artist_id>
+    <images_id>4</images_id>
+    <imagel_id>4</imagel_id>
+    <genre_id>4</genre_id>
+    <artist_name>Pablo Picasso</artist_name>
+    <DOB>October 25, 1881 - April 8, 1973</DOB>
+    <POL>Spain/France</POL>
+    <famous_works>The Old Guitarist, La Vie</famous_works>
+    <description>
+      <p>Pablo Picasso of modern fame was a prominent late 19th early 20th century painter whose work on Surrealism and abstract art drew crowds from around the world. Famous paintings such as The Old Guitarist along with his drawings and sculptures are
+        timeless. He was a Spanish painter, sculptor, printmaker, ceramicist, stage designer, poet, and playwright that spent most of his adult life in France.</p>
+    </description>
+    <more_info>
+      <p>Pablo Picasso was regarded as one of the most influential artists of the 20th century. Picasso demonstrated his extraordinary artistic talent during his childhood to adolescence. The artworks created by Picasso are often categorized into periods.</p>
+    </more_info>
+  </Artist>
+
+  <Artist ID="5">
+    <artist_id>5</artist_id>
+    <images_id>5</images_id>
+    <imagel_id>5</imagel_id>
+    <genre_id>2</genre_id>
+    <artist_name>Vincent van Gogh</artist_name>
+    <DOB>March 30, 1853 - July 29, 1890</DOB>
+    <POL>Netherlands/France</POL>
+    <famous_works>The Starry Night, Sunflowers</famous_works>
+    <description>
+      <p>Vincent Willem van Gogh, a Dutch Post-Impressionlist painter. The life of Vincent van Gogh was rough and traumatizing. Learn more in his wiki - he painted lots of artworks including Sunflowers and Starry Night.</p>
+      <p>He cut off his own ear.</p>
+    </description>
+    <more_info>
+      <p>Vincent William van Gogh is one of the most influential and famous figures in the history of western art. He has created about 2,100 artworks just barely over a decade and are characterised by bold colors, dramatic, impulsive, and expressive
+        brushworks that serve as the foundation of modern art.</p>
+      <p>Van Gogh has also suffered from mental instability as he had pyschotic episodes and delusions.</p>
+    </more_info>
+  </Artist>
+
+  <Artist ID="6">
+    <artist_id>6</artist_id>
+    <images_id>6</images_id>
+    <imagel_id>6</imagel_id>
+    <genre_id>6</genre_id>
+    <artist_name>Paolo De Matteis</artist_name>
+    <DOB>N/A</DOB>
+    <POL>N/A</POL>
+    <famous_works>N/A</famous_works>
+    <description>N/A</description>
+    <more_info>N/A</more_info>
+  </Artist>
+
+  <Artist ID="7">
+    <artist_id>7</artist_id>
+    <images_id>7</images_id>
+    <imagel_id>7</imagel_id>
+    <genre_id>1</genre_id>
+    <artist_name>Perugino</artist_name>
+    <DOB>N/A</DOB>
+    <POL>N/A</POL>
+    <famous_works>N/A</famous_works>
+    <description>N/A</description>
+    <more_info>N/A</more_info>
+  </Artist>
+
+</Artists>
