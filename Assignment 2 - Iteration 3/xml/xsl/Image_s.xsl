@@ -7,17 +7,17 @@
   <xsl:template match="/">
     <html>
       <body>
-        <h2>Subjects</h2>
+        <h2>Small Images</h2>
         <table border="1">
           <tr bgcolor="#ADD8E6">
             <th style="text-align:left">ID</th>
-            <th style="text-align:left">Subject Name</th>
+            <th style="text-align:left">Image Path</th>
           </tr>
 
-          <xsl:for-each select="Subjects/Subject">
+          <xsl:for-each select="Image_s/Image_s">
             <tr>
               <td><xsl:value-of select="@ID"/></td>
-              <td><xsl:value-of select="subject_name"/></td>
+              <td><xsl:value-of select="image_s"/></td>
             </tr>
           </xsl:for-each>
         </table>
